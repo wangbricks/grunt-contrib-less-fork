@@ -37,11 +37,12 @@ module.exports = function (grunt) {
       this.files,
       function (f, nextFileObj) {
         // 兼容grunt 返回的f属性，dest文件地址问题
-        f.dest = f.src[0].replace(
+        f.dest = _.replace(
+          f.src[0],
           f.orig.compilePath || f.orig.cwd,
           f.orig.dest
         );
-        f.dest = f.dest.replace('.less', '.css');
+        f.dest = _.replace(f.dest, /\.less$/g, '.css');
         // 修改
         var destFile = f.dest;
 
