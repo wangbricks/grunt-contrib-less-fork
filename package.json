@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-less-fork",
   "description": "Compile LESS files to CSS, Modify Grunt-contrib-less EachSeries Error",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "wangbrkcs"
   },
