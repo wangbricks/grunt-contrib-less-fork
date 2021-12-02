@@ -43,7 +43,6 @@ module.exports = function (grunt) {
           f.orig.dest
         );
         f.dest = _.replace(f.dest, /\.less$/g, '.css');
-        console.log('fffff', f);
         // 修改
         var destFile = f.dest;
 
